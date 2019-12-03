@@ -1,0 +1,22 @@
+.date{
+  text-align: center;
+  border: 1px solid black;
+}
+
+.info{
+  display: flex;
+  border: 1px solid black;
+  justify-content: space-evenly; 
+}
+
+.marsPhoto{
+  border: 1px solid black
+}
+.popularPhoto{
+  border: 1px solid black;
+}
+
+.favorites{
+  border: 1px solid black;
+  text-align: center;
+}
