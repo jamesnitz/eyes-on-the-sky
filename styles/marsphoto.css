@@ -1,0 +1,26 @@
+.marsPhotoContainer{
+  border: 1px solid black;
+  text-align: center;
+}
+
+.Mars{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.marsphotos{
+  max-width: 20%;
+}
+
+.mars__photocard{
+  border: 1px solid black;
+  flex-basis: 30%;
+  margin: 10px;
+  
+}
+
+.noPhoto{
+  font-size: xx-large;
+  color: red;
+}

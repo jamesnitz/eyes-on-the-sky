@@ -8,21 +8,23 @@
   <title>Eyes On The Sky</title>
 </head>
 <body>
-  <h1>Eyes On The Sky</h1>
-  <div class="date">
-    <label for="specificDate">Specific Date</label>
-    <input type="date" name="specificDate" id="specificDate">
+  <h1>Eyes On The Sky </h1>
+  <div class="container">
+
+    <div class="date">
+      <label for="specificDate">Specific Date</label>
+      <input type="date" name="specificDate" class="specificDate">
+    </div>
+    <section class="info">
+      <article class="popularPhoto">
+      </article>
+      <article class="marsPhotoContainer">
+      </article>  
+    </section>
+    <aside class="favorites">
+      <h3>These are my favorites</h3>
+    </aside>
   </div>
-  <section class="info">
-    <article class="marsPhoto">
-      <h3>Mars Rover Photo</h3>
-    </article>
-    <article class="popularPhoto">
-      <h3>Most Popular astronomy photo of the day</h3>
-    </article>
-  </section>
-  <aside class="favorites">
-    <h3>These are my favorites</h3>
-  </aside>
+    <script type="module" src="./scripts/main.js"></script>
 </body>
 </html>
