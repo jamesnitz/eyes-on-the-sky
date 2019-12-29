@@ -14,3 +14,7 @@ export const getMarsPhotos = (rover, date) => {
             }
         )
 }
+
+export const refreshPhotos = () => {
+    marsPhotosCollection = []
+}
