@@ -1,23 +1,18 @@
-import { getMarsPhotos, getMarsPhotosOpportunity, getMarsPhotosSpirit } from "./MarsPhotoDataProvider.js"
-import marsPhotoListComponent from "./marsPhotoListComponent.js"
-
-
 const eventHub = document.querySelector(".container") 
 
-export const dateListener = () => {
-  eventHub.addEventListener("change", event => {
-    if (event.target.classList.contains("specificDate")){
-      const dateValue = event.target.value
+export const searchButtonListener = () => {
+  eventHub.addEventListener("click", event => {
+    if (event.target.classList.contains("searchButton")){
+      const roverValue = document.querySelector(".roverSearch").value
+      const dateValue = document.querySelector(".specificDate").value
       const broadcast = new CustomEvent("broadcastDate", {
         detail: {
-          date: dateValue
-
+          date: dateValue,
+          rover: roverValue
         }
       })  
-      
-      
       eventHub.dispatchEvent(broadcast);  
     }
     })
   }
-  export default dateListener
+  export default searchButtonListener
