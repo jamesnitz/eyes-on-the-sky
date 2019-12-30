@@ -2,25 +2,25 @@ import { usePotd, getPotd } from "./potdDataProvider.js";
 
 const eventHub = document.querySelector(".container")
 const content = document.querySelector(".popularPhoto");
-let currentDate = "12-01-2019"
+
 const potdListComponent = () => {
-  const allpotd = usePotd()
-  const renderPotd = () => {
+
+  const renderPotd = (allpotd) => {
     if (allpotd.media_type === "image") {
       content.innerHTML =
-      `
+        `
       <div class="potd">
       <h3>Most Popular astronomy photo of the day</h3>
       <div>${allpotd.title}</div>
       <img class="potdpic" src="${allpotd.url}">
       <div>${allpotd.date}</div>
       <div>${allpotd.explanation}</div>
-    </div>
+      </div>
     `
-  } else if (allpotd.media_type === "video") {
-    
-    content.innerHTML +=
-    `
+    } else if (allpotd.media_type === "video") {
+
+      content.innerHTML =
+        `
     <div class="potd">
     <h3>Most Popular astronomy photo of the day</h3>
     <div>${allpotd.title}</div>
@@ -29,15 +29,27 @@ const potdListComponent = () => {
     <div>${allpotd.explanation}</div>
     </div>
     `
+    }
   }
-  }
-  renderPotd(currentDate)
+  
+  const date = new Date();
+  const currentDate = date.getFullYear().toString() + '-' + (date.getMonth() + 1).toString().padStart(2, 0) +
+    '-' + date.getDate().toString().padStart(2, 0);
+
+  //needs to be passed curent date
+  getPotd(currentDate)
+    .then(() => {
+      const allpotd = usePotd()
+      renderPotd(allpotd)
+    })
+
+
 
   eventHub.addEventListener("broadcastPotd", event => {
     const potdDate = event.detail.date
-    const newPotd = usePotd()
     getPotd(potdDate)
-    .then(() => {
+      .then(() => {
+        const newPotd = usePotd()
         renderPotd(newPotd)
       })
   })
