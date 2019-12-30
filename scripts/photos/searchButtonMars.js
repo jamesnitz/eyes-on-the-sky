@@ -18,5 +18,3 @@ export const searchButtonListener = () => {
     }
   })
 }
-
-export default searchButtonListener
