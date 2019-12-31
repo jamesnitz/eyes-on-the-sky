@@ -1,0 +1,16 @@
+{
+  "favorites": [
+    {
+      "title": "M33: The Triangulum Galaxy",
+      "image": "https://apod.nasa.gov/apod/image/1912/M33-HaLRGB-RayLiao1024.jpg",
+      "date": "2019-12-31",
+      "id": 1
+    },
+    {
+      "title": "M33: The Triangulum Galaxy",
+      "image": "https://apod.nasa.gov/apod/image/1912/M33-HaLRGB-RayLiao1024.jpg",
+      "date": "2019-12-31",
+      "id": 2
+    }
+  ]
+}
