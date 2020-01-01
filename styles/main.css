@@ -1,5 +1,6 @@
 @import './marsphoto.css';
 @import './potd.css';
+@import './favorites.css';
 
 .date{
   text-align: center;

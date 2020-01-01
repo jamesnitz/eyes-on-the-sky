@@ -1,6 +1,5 @@
 
 const eventHub = document.querySelector(".container")
-const content = document.querySelector(".favoriteContainer")
 
 export const favoritesComponent = () => {
   eventHub.addEventListener("click", event => {

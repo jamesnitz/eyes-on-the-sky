@@ -1,0 +1,17 @@
+.favorite__container{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.favorite__pic{
+  max-width: 25%;
+  text-align: center;
+}
+
+.favorite{
+  text-align: center;
+  border: 1px solid black;
+  width: 25%;
+  height: auto;
+}
