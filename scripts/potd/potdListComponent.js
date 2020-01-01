@@ -11,10 +11,11 @@ const potdListComponent = () => {
         `
       <div class="potd">
       <h3>Most Popular astronomy photo of the day</h3>
-      <div>${allpotd.title}</div>
+      <div class="potdTitle">${allpotd.title}</div>
       <img class="potdpic" src="${allpotd.url}">
-      <div>${allpotd.date}</div>
+      <div class="potdDisplayDate">${allpotd.date}</div>
       <div>${allpotd.explanation}</div>
+      <button class="favoriteButton">Favorite</button>
       </div>
     `
     } else if (allpotd.media_type === "video") {
