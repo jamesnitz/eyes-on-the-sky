@@ -4,8 +4,7 @@ const eventHub = document.querySelector(".container")
 const content = document.querySelector(".popularPhoto");
 
 const potdListComponent = () => {
-
-  const renderPotd = (allpotd) => {
+   const renderPotd = (allpotd) => {
     if (allpotd.media_type === "image") {
       content.innerHTML =
         `

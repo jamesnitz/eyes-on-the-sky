@@ -27,3 +27,10 @@ export const saveFavorite = favorite => {
   })
   .then(getFavorites)
 }
+
+export const deleteFavorite = favoriteId => {
+  return fetch(`http://localhost:3000/favorites/${favoriteId}`, {
+    method: "DELETE"
+  })
+  .then(getFavorites)
+}

@@ -1,16 +1,10 @@
 {
   "favorites": [
     {
-      "title": "M33: The Triangulum Galaxy",
-      "image": "https://apod.nasa.gov/apod/image/1912/M33-HaLRGB-RayLiao1024.jpg",
-      "date": "2019-12-31",
+      "title": "Messier 63: The Sunflower Galaxy",
+      "image": "https://apod.nasa.gov/apod/image/1906/M63_PS1_CROP2_1024.jpg",
+      "date": "2019-06-06",
       "id": 1
-    },
-    {
-      "title": "M33: The Triangulum Galaxy",
-      "image": "https://apod.nasa.gov/apod/image/1912/M33-HaLRGB-RayLiao1024.jpg",
-      "date": "2019-12-31",
-      "id": 2
     }
   ]
 }
